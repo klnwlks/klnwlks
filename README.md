@@ -6,4 +6,4 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=klnwlks&count_private=true&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Web Portfolio
-[<img src="https://kalinawlukas.netlify.app/metaimg.png" width="300" height="200" />](https://kalinawlukas.netlify.app)
+[<img src="https://lukas-bebis.netlify.app/embed.png" width="300" height="200" />](https://lukas-bebis.netlify.app)
