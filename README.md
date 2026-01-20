@@ -1,8 +1,8 @@
 ## About
 - 👋 Hi, I’m @klnwlks
-- 👀 I’m interested in software programming
-- 🌱 I’m currently learning AI development
-- 📚 Studying at the University of the Philippines Los Banos
+- 👀 I’m interested in software programming and everything computers
+- 🌱 I’m currently learning full-stack development
+- 📚 Studying at the University of the Philippines Los Banos as batch 2025
 
 ## Stack
 - whatever for frontend web lol (current favorite is solid.js)
