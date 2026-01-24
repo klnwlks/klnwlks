@@ -24,7 +24,6 @@ As of the moment i'm focused on building scalable web apps and services, studyin
 ## interests
 - cycling
 - lifting
-- lockpicking
 - reading
 
 ## Web Portfolio
