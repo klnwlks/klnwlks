@@ -4,11 +4,7 @@
 - 🌱 I’m currently learning full-stack development
 - 📚 Studying at the University of the Philippines Los Banos as batch 2025
 
-## Stack
-- whatever for frontend web lol (current favorite is solid.js)
-- FastAPI
-- Django Rest Framework
-- C / C++
+
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=klnwlks&count_private=true&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
 
