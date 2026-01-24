@@ -1,6 +1,8 @@
 # the most important part of living is having fun B)
 I am Kalinaw Lukas Aom C. Bebis, Lukas for short.
+
 Currently studying Computer Science at University of the Philippines Los Banos (1st year)
+
 As of the moment i'm focused on building scalable web apps and services, studying artificial intelligence, having fun with computers, and meeting amazing people in hackathons.
 
 ## recent things im doing
