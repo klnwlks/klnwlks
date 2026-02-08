@@ -7,9 +7,9 @@ As of the moment i'm focused on building scalable web apps and services, studyin
 
 ## recent things im doing
 - working on rebuilding my portfolio for the 3rd time
-- built a sweet landing page for a local PH-based green product merchant
-- building a modern and digitized tool for geodetic engineers
-- building a feature-rich, low-cost, performant tech suite for public schools
+- built a sweet landing page for a local PH-based green product merchant [link](https://www.projectrefill.ph/)
+- building a modern and digitized tool for geodetic engineers [link](https://landtag.ph/)
+- building a feature-rich, low-cost, performant tech suite for public schools [link](https://bantayaso.netlify.app/)
 - reading about neural networks
 - reading dostoevsky (current: brothers karamazov)
 - joined a couple hackathons (OPENGOV DICT 2025 SPECIAL AWARDEE, BYTEFORWARD SOUTH LUZON LEG 2025)
