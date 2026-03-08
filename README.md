@@ -7,7 +7,6 @@ As of the moment i'm focused on building scalable web apps and services, studyin
 
 ## recent things im doing
 - working on rebuilding my portfolio for the 3rd time (DONE)
-- built a landing page for a local PH-based green product merchant [link](https://www.projectrefill.ph/)
 - building a modern and digitized tool for geodetic engineers [link](https://landtag.ph/)
 - building a feature-rich, low-cost, performant tech suite for public schools [link](https://bantayaso.netlify.app/)
 - reading about neural networks
@@ -27,4 +26,4 @@ As of the moment i'm focused on building scalable web apps and services, studyin
 - reading
 
 ## Web Portfolio
-[<img src="https://lukas-bebis.netlify.app/embed.webp" width="300" height="200" />](https://lukas-bebis.netlify.app)
+[<img src="https://lukasbebis.com/embed.webp" width="300" height="200" />](https://lukasbebis.com)
