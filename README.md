@@ -9,9 +9,10 @@ As of the moment i'm focused on building scalable web apps and services, studyin
 - working on rebuilding my portfolio for the 3rd time (DONE)
 - building a modern and digitized tool for geodetic engineers [link](https://landtag.ph/)
 - building a feature-rich, low-cost, performant tech suite for public schools [link](https://bantayaso.netlify.app/)
+- making a game engine for bullet hell games in C
 - reading about neural networks
 - reading dostoevsky (current: notes from the underground)
-- joined a couple hackathons (OPENGOV DICT 2025 SPECIAL AWARDEE, BYTEFORWARD SOUTH LUZON LEG 2025)
+- joined a couple hackathons (THE INNOVATION LAB 2026)
 - learning mobile development
 
 ## skills
