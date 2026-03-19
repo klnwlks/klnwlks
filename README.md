@@ -16,7 +16,7 @@ As of the moment i'm focused on building scalable web apps and services, studyin
 - learning mobile development
 
 ## skills
-- 3 years of experience in web development
+- 4 years of experience in web development
 - *some* knowledge in C / C++ development (primarily tui/ncurses applications)
 - benched 200 lbs 1RM for a class output
 - linux things
