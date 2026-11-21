@@ -87,7 +87,7 @@ layers = [
         f'<g id="total-{ord(char)}">{type_line(char, 0, 0, 17)}</g>'
         for char in '0123456789,'
     ) + '</defs>',
-    '<rect width="800" height="584" fill="#F1EBDD"/>',
+    '<rect x="0" y="-20" width="800" height="604" fill="#F1EBDD"/>',
     type_line(NAME, 36, 48, 48, width=605),
     bloom(682, 8, 82),
     rule(72),
@@ -117,7 +117,7 @@ layers = [
     *marks,
 ]
 (ROOT / 'scripts/profile-template.svg').write_text(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1168" viewBox="0 0 800 584">\n'
+    '<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1208" viewBox="0 -20 800 604">\n'
     '<title>Kalinaw Lukas Aom Bebis</title>\n'
     '<desc>About me: just have fun B) 2nd yr bscs @ uplb, big fan of computers and such. GitHub contributions. '
     'Recent: on my 7th hackathon this year; doing freelance webdev; redesigning portfolio soon; '
