@@ -90,7 +90,7 @@ layers = [
     type_line('about me', 36, 104, 31),
     type_line('just have fun B)', 36, 131, 26),
     type_line('2nd yr bscs @ uplb, big fan of computers and such', 36, 158, 26),
-    type_line('lukasbebis.com', 36, 184, 21, font=MONO, color=MOSS),
+    type_line('lukasbebis.com', 36, 184, 26, color=MOSS),
     rule(200),
     type_line('contributions', 36, 230, 31),
     '<!-- calendar -->',
@@ -112,7 +112,7 @@ layers = [
     *marks,
 ]
 (ROOT / 'scripts/profile-template.svg').write_text(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="520" height="379.6" viewBox="0 0 800 584">\n'
+    '<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1168" viewBox="0 0 800 584">\n'
     '<title>Kalinaw Lukas Aom Bebis</title>\n'
     '<desc>About me: just have fun B) 2nd yr bscs @ uplb, big fan of computers and such. GitHub contributions. '
     'Recent: on my 7th hackathon this year; doing freelance webdev; redesigning portfolio soon; '
