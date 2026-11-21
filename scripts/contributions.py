@@ -7,7 +7,7 @@ from urllib.request import Request, urlopen
 
 URL = 'https://github.com/users/klnwlks/contributions'
 TEMPLATE = Path(__file__).with_name('profile-template.svg')
-OUTPUT = TEMPLATE.parents[1] / 'assets/profile.svg'
+OUTPUT = TEMPLATE.parents[1] / 'assets/ledger.svg'
 LEVELS = ('#DFD9C7', '#B5B99A', '#8D9B74', '#607650', '#344333')
 
 
@@ -43,12 +43,12 @@ def render(days):
     for day in dates:
         if day.day == 1 and day.month in (1, 4, 7, 10):
             x = 36 + (day - sunday).days // 7 * pitch
-            rows.append(f'<text x="{min(x, 729):.2f}" y="299">{month_abbr[day.month].lower()}</text>')
-    rows += [f'<text x="36" y="409">through {dates[-1].isoformat()}</text>', '</g>']
+            rows.append(f'<text x="{min(x, 729):.2f}" y="252">{month_abbr[day.month].lower()}</text>')
+    rows += [f'<text x="36" y="341">through {dates[-1].isoformat()}</text>', '</g>']
     for day in dates:
         col, row = divmod((day - sunday).days, 7)
-        rows.append(f'<rect x="{36 + col * pitch:.2f}" y="{307 + row * 12}" '
-                    f'width="10" height="10" fill="{LEVELS[days[day]]}"/>')
+        rows.append(f'<rect x="{36 + col * pitch:.2f}" y="{258 + row * 10}" '
+                    f'width="9" height="9" fill="{LEVELS[days[day]]}"/>')
     return '\n'.join([*rows, '</g>'])
 
 
