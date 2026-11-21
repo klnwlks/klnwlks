@@ -80,30 +80,44 @@ icons = ('typescript', 'python', 'c', 'react', 'astro', 'bun')
 marks = []
 for index, slug in enumerate(icons):
     path = re.search(r'<path d="([^"]+)"', (ICONS / f'{slug}.svg').read_text())[1]
-    marks.append(f'<path transform="translate({36 + index * 64} 779) scale(1.5)" fill="{MOSS}" d="{path}"/>')
+    marks.append(f'<path transform="translate({36 + index * 64} 1007) scale(1.5)" fill="{MOSS}" d="{path}"/>')
 
 layers = [
-    '<rect width="800" height="850" fill="#F1EBDD"/>',
+    '<rect width="800" height="1078" fill="#F1EBDD"/>',
     type_line(NAME, 36, 115, 69, width=580),
     bloom(622, 31, 142),
     rule(167),
     type_line('about me', 36, 230, 53),
-    type_line("i'm lukas, a computer science student", 36, 284, 37),
-    type_line('at UPLB and a full-stack developer.', 36, 329, 37),
+    type_line('just have fun B)', 36, 273, 35),
+    type_line('2nd yr bscs @ uplb, big fan of', 36, 312, 35),
+    type_line('computers and such', 36, 350, 35),
     rule(368),
     type_line('contributions', 36, 435, 55),
     '<!-- calendar -->',
     rule(599),
-    type_line('recent work', 36, 644, 28, font=MONO),
-    type_line('MATA / RoomTBA / raymaku', 36, 687, 28, font=MONO),
-    rule(718),
-    type_line('tools', 36, 758, 28, font=MONO),
+    type_line('recent', 36, 653, 53),
+    *(
+        f'<circle cx="43" cy="{y - 10}" r="3" fill="{MOSS}"/>' + type_line(item, 64, y, 33)
+        for y, item in zip(range(700, 814, 37), (
+            'on my 7th hackathon this year',
+            'doing freelance webdev',
+            'redesigning portfolio soon',
+            'working on private projects',
+        ))
+    ),
+    rule(850),
+    type_line('recent work', 36, 892, 28, font=MONO),
+    type_line('MATA / RoomTBA / raymaku', 36, 933, 28, font=MONO),
+    rule(953),
+    type_line('tools', 36, 992, 28, font=MONO),
     *marks,
 ]
 (ROOT / 'scripts/profile-template.svg').write_text(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="850" viewBox="0 0 800 850">\n'
+    '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1078" viewBox="0 0 800 1078">\n'
     '<title>Kalinaw Lukas Aom Bebis</title>\n'
-    '<desc>Computer science student at UPLB and full-stack developer. GitHub contributions. '
+    '<desc>About me: just have fun B) 2nd yr bscs @ uplb, big fan of computers and such. GitHub contributions. '
+    'Recent: on my 7th hackathon this year; doing freelance webdev; redesigning portfolio soon; '
+    'working on private projects. '
     'Recent work: MATA, RoomTBA, raymaku. Tools: TypeScript, Python, C, React, Astro, Bun.</desc>\n'
     + '\n'.join(layers) + '\n</svg>\n', encoding='utf-8',
 )

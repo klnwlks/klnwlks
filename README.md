@@ -1,3 +1,3 @@
-[![Kalinaw Lukas Aom Bebis — computer science student at UPLB and full-stack developer. Includes my GitHub contribution calendar, recent work, and tools: TypeScript, Python, C, React, Astro, and Bun.](assets/profile.svg)](https://lukasbebis.com)
+[![Kalinaw Lukas Aom Bebis. About me: just have fun B) — 2nd yr bscs @ uplb, big fan of computers and such. GitHub contribution calendar. Recent: on my 7th hackathon this year; doing freelance webdev; redesigning portfolio soon; working on private projects. Tools: TypeScript, Python, C, React, Astro, and Bun.](assets/profile.svg)](https://lukasbebis.com)
 
 [MATA](https://github.com/klnwlks/MATA-NASASPACEAPPS2026) · [RoomTBA](https://github.com/uplbtools/room-tba) · [raymaku](https://github.com/klnwlks/raymaku) · [Contribution details](https://github.com/klnwlks#js-contribution-activity-description)
