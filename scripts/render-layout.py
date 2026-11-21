@@ -83,6 +83,10 @@ for index, slug in enumerate(icons):
     marks.append(f'<path transform="translate({210 + index * 42} 541) scale(1.1)" fill="{MOSS}" d="{path}"/>')
 
 layers = [
+    '<defs>' + ''.join(
+        f'<g id="total-{ord(char)}">{type_line(char, 0, 0, 31)}</g>'
+        for char in '0123456789,'
+    ) + '</defs>',
     '<rect width="800" height="584" fill="#F1EBDD"/>',
     type_line(NAME, 36, 48, 48, width=605),
     bloom(682, 8, 82),
@@ -93,6 +97,7 @@ layers = [
     type_line('lukasbebis.com', 36, 184, 26, color=MOSS),
     rule(200),
     type_line('contributions', 36, 230, 31),
+    type_line('in the last year', 590, 230, 31, width=174),
     '<!-- calendar -->',
     rule(351),
     type_line('recent', 36, 382, 31),

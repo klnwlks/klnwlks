@@ -1,5 +1,4 @@
 """Refresh the public contribution calendar inside the profile's single SVG."""
-from calendar import month_abbr
 from datetime import date, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
@@ -8,7 +7,7 @@ from urllib.request import Request, urlopen
 
 URL = 'https://github.com/users/klnwlks/contributions'
 TEMPLATE = Path(__file__).with_name('profile-template.svg')
-OUTPUT = TEMPLATE.parents[1] / 'assets/growth-ledger.svg'
+OUTPUT = TEMPLATE.parents[1] / 'assets/profile-card.svg'
 LEVELS = ('#DFD9C7', '#B5B99A', '#8D9B74', '#607650', '#344333')
 
 
@@ -54,19 +53,15 @@ def render(days, total):
     sunday = dates[0] - timedelta(days=(dates[0].weekday() + 1) % 7)
     weeks = (dates[-1] - sunday).days // 7 + 1
     pitch = 728 / weeks
-    rows = [
-        f'<g aria-label="Contribution levels from {dates[0]} through {dates[-1]}">',
-        '<g font-family="monospace" font-size="19" fill="#56534A">',
-        f'<text x="764" y="230" text-anchor="end" font-size="24">{total:,} in the last year</text>',
-    ]
-    for day in dates:
-        if day.day == 1 and day.month in (1, 4, 7, 10):
-            x = 36 + (day - sunday).days // 7 * pitch
-            rows.append(f'<text x="{min(x, 729):.2f}" y="252">{month_abbr[day.month].lower()}</text>')
-    rows += [f'<text x="36" y="341">through {dates[-1].isoformat()}</text>', '</g>']
+    count = f'{total:,}'
+    rows = [f'<g aria-label="{count} contributions in the last year">']
+    x = 583
+    for char in reversed(count):
+        x -= 7 if char == ',' else 16
+        rows.append(f'<use href="#total-{ord(char)}" x="{x}" y="230"/>')
     for day in dates:
         col, row = divmod((day - sunday).days, 7)
-        rows.append(f'<rect x="{36 + col * pitch:.2f}" y="{258 + row * 10}" '
+        rows.append(f'<rect x="{36 + col * pitch:.2f}" y="{249 + row * 12}" '
                     f'width="9" height="9" fill="{LEVELS[days[day]]}"/>')
     return '\n'.join([*rows, '</g>'])
 
