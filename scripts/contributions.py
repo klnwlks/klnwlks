@@ -7,7 +7,7 @@ from urllib.request import Request, urlopen
 
 URL = 'https://github.com/users/klnwlks/contributions'
 TEMPLATE = Path(__file__).with_name('profile-template.svg')
-OUTPUT = TEMPLATE.parents[1] / 'assets/profile-card.svg'
+OUTPUT = TEMPLATE.parents[1] / 'assets/profile-ledger.svg'
 LEVELS = ('#DFD9C7', '#B5B99A', '#8D9B74', '#607650', '#344333')
 
 
@@ -55,9 +55,9 @@ def render(days, total):
     pitch = 728 / weeks
     count = f'{total:,}'
     rows = [f'<g aria-label="{count} contributions in the last year">']
-    x = 583
+    x = 664
     for char in reversed(count):
-        x -= 7 if char == ',' else 16
+        x -= 4 if char == ',' else 9
         rows.append(f'<use href="#total-{ord(char)}" x="{x}" y="230"/>')
     for day in dates:
         col, row = divmod((day - sunday).days, 7)
