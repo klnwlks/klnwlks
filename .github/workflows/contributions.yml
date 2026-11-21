@@ -1,0 +1,29 @@
+name: Refresh contribution calendar
+
+on:
+  schedule:
+    - cron: '37 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: contribution-calendar
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - run: python3 scripts/contributions.py
+      - name: Publish changed calendar
+        run: |
+          if git diff --quiet -- assets/profile.svg; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/profile.svg
+          git commit -m 'Refresh contribution calendar'
+          git push
