@@ -43,11 +43,11 @@ def render(days):
     for day in dates:
         if day.day == 1 and day.month in (1, 4, 7, 10):
             x = 36 + (day - sunday).days // 7 * pitch
-            rows.append(f'<text x="{min(x, 729):.2f}" y="469">{month_abbr[day.month].lower()}</text>')
-    rows += [f'<text x="36" y="582">through {dates[-1].isoformat()}</text>', '</g>']
+            rows.append(f'<text x="{min(x, 729):.2f}" y="299">{month_abbr[day.month].lower()}</text>')
+    rows += [f'<text x="36" y="409">through {dates[-1].isoformat()}</text>', '</g>']
     for day in dates:
         col, row = divmod((day - sunday).days, 7)
-        rows.append(f'<rect x="{36 + col * pitch:.2f}" y="{480 + row * 12}" '
+        rows.append(f'<rect x="{36 + col * pitch:.2f}" y="{307 + row * 12}" '
                     f'width="10" height="10" fill="{LEVELS[days[day]]}"/>')
     return '\n'.join([*rows, '</g>'])
 

@@ -80,40 +80,39 @@ icons = ('typescript', 'python', 'c', 'react', 'astro', 'bun')
 marks = []
 for index, slug in enumerate(icons):
     path = re.search(r'<path d="([^"]+)"', (ICONS / f'{slug}.svg').read_text())[1]
-    marks.append(f'<path transform="translate({36 + index * 64} 1007) scale(1.5)" fill="{MOSS}" d="{path}"/>')
+    marks.append(f'<path transform="translate({210 + index * 47} 655) scale(1.25)" fill="{MOSS}" d="{path}"/>')
 
 layers = [
-    '<rect width="800" height="1078" fill="#F1EBDD"/>',
-    type_line(NAME, 36, 115, 69, width=580),
-    bloom(622, 31, 142),
-    rule(167),
-    type_line('about me', 36, 230, 53),
-    type_line('just have fun B)', 36, 273, 35),
-    type_line('2nd yr bscs @ uplb, big fan of', 36, 312, 35),
-    type_line('computers and such', 36, 350, 35),
-    rule(368),
-    type_line('contributions', 36, 435, 55),
+    '<rect width="800" height="704" fill="#F1EBDD"/>',
+    type_line(NAME, 36, 61, 57, width=595),
+    type_line('portfolio / lukasbebis.com', 36, 89, 21, font=MONO, color=MOSS),
+    bloom(661, 11, 103),
+    rule(105),
+    type_line('about me', 36, 147, 36),
+    type_line('just have fun B)', 36, 181, 30),
+    type_line('2nd yr bscs @ uplb, big fan of computers and such', 36, 215, 30),
+    rule(234),
+    type_line('contributions', 36, 273, 36),
     '<!-- calendar -->',
-    rule(599),
-    type_line('recent', 36, 653, 53),
+    rule(420),
+    type_line('recent', 36, 459, 36),
     *(
-        f'<circle cx="43" cy="{y - 10}" r="3" fill="{MOSS}"/>' + type_line(item, 64, y, 33)
-        for y, item in zip(range(700, 814, 37), (
+        f'<circle cx="42" cy="{y - 8}" r="2.5" fill="{MOSS}"/>' + type_line(item, 59, y, 30)
+        for y, item in zip(range(491, 581, 29), (
             'on my 7th hackathon this year',
             'doing freelance webdev',
             'redesigning portfolio soon',
             'working on private projects',
         ))
     ),
-    rule(850),
-    type_line('recent work', 36, 892, 28, font=MONO),
-    type_line('MATA / RoomTBA / raymaku', 36, 933, 28, font=MONO),
-    rule(953),
-    type_line('tools', 36, 992, 28, font=MONO),
+    rule(600),
+    type_line('recent work', 36, 634, 23, font=MONO),
+    type_line('MATA / RoomTBA / raymaku', 210, 634, 23, font=MONO),
+    type_line('tools', 36, 678, 23, font=MONO),
     *marks,
 ]
 (ROOT / 'scripts/profile-template.svg').write_text(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1078" viewBox="0 0 800 1078">\n'
+    '<svg xmlns="http://www.w3.org/2000/svg" width="640" height="563.2" viewBox="0 0 800 704">\n'
     '<title>Kalinaw Lukas Aom Bebis</title>\n'
     '<desc>About me: just have fun B) 2nd yr bscs @ uplb, big fan of computers and such. GitHub contributions. '
     'Recent: on my 7th hackathon this year; doing freelance webdev; redesigning portfolio soon; '
