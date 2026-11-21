@@ -7,7 +7,7 @@ from urllib.request import Request, urlopen
 
 URL = 'https://github.com/users/klnwlks/contributions'
 TEMPLATE = Path(__file__).with_name('profile-template.svg')
-OUTPUT = TEMPLATE.parents[1] / 'assets/profile-ledger-v2.svg'
+OUTPUT = TEMPLATE.parents[1] / 'assets/profile-ledger-v3.svg'
 LEVELS = ('#DFD9C7', '#B5B99A', '#8D9B74', '#607650', '#344333')
 
 

@@ -12,7 +12,7 @@ FONTS = PORTFOLIO / 'node_modules'
 PAPER, DEEP, INK, RULE, MOSS = (
     '#F1EBDD', '#E6DDCB', '#25231F', '#CEC3AE', '#465043',
 )
-NAME = 'kalinaw lukas aom bebis'
+NAME = 'klnwlks'
 ICONS = Path(sys.argv[1])
 
 
@@ -89,8 +89,8 @@ layers = [
     ) + '</defs>',
     '<rect x="0" y="-20" width="800" height="604" fill="#F1EBDD"/>',
     type_line(NAME, 36, 48, 48, width=605),
-    bloom(682, 8, 82),
-    rule(72),
+    bloom(580, 7, 184),
+    rule(72, right=556),
     type_line('about me', 36, 104, 31),
     type_line('just have fun B)', 36, 131, 26),
     type_line('2nd yr bscs @ uplb, big fan of computers and such', 36, 158, 26),
@@ -118,7 +118,7 @@ layers = [
 ]
 (ROOT / 'scripts/profile-template.svg').write_text(
     '<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1208" viewBox="0 -20 800 604">\n'
-    '<title>Kalinaw Lukas Aom Bebis</title>\n'
+    f'<title>{NAME}</title>\n'
     '<desc>About me: just have fun B) 2nd yr bscs @ uplb, big fan of computers and such. GitHub contributions. '
     'Recent: on my 7th hackathon this year; doing freelance webdev; redesigning portfolio soon; '
     'working on private projects. '
